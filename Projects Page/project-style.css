@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+header{
+    height: 50px;
+    background-color: #212121;
+}
+
+header > img {
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.navigation-b, #current-page{
+    float: right;
+    background-color: #212121;
+    border: none;
+    color: #7A7A7A;
+    margin-right: 5%;
+    margin-top: 1%;
+    font-size: 120%;
+    outline: none;
+    transition: color 1s;
+}
+
+#current-page{
+    border-bottom: 1.5px solid #7A7A7A;
+    border-radius: 5%;
+    transition: border-radius 1s, color 1s;
+}
+
+.navigation-b:hover, #current-page:hover{
+    transition: all 1s ease-in-out;
+    color: #7B0000;
+}
+
+#current-page:hover{
+    border-bottom: 1.5px solid #7B0000;
+    border-radius: 20%;
+}
+
+.projects{
+    margin-top: 5%;
+    
+}
+
+.projects > #AIProj, #survey, #prototype{
+    display: inline-block;
+    margin: 4.5%;
+    border: 2px solid white;
+    border-radius: 5%;
+    text-align: center;
+    padding-bottom: .5%;
+    font-size: 110%;
+    text-transform: uppercase;
+    transition: border-color 1s, color 1s;
+    cursor: pointer;
+}
+
+#AIProj > a > img, #survey > a > img, #prototype > a > img {
+    border-radius: 5%;
+}
+
+#AIProj:hover, #survey:hover, #prototype:hover{
+    border-color: rgb(211, 0, 0);
+    color: rgb(211, 0, 0);
+    transition: 1s;
+}
+
+a{
+    color: unset;
+    text-decoration: unset;
+}

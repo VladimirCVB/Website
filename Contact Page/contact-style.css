@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: #7A7A7A;
+}
+
+header{
+    height: 50px;
+    background-color: #212121;
+}
+
+header > img {
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.navigation-b, #current-page{
+    float: right;
+    background-color: #212121;
+    border: none;
+    color: #7A7A7A;
+    margin-right: 5%;
+    margin-top: 1%;
+    font-size: 120%;
+    outline: none;
+    transition: color 1s;
+}
+
+#current-page{
+    border-bottom: 1.5px solid #7A7A7A;
+    border-radius: 5%;
+    transition: border-radius 1s, color 1s;
+}
+
+.navigation-b:hover, #current-page:hover{
+    transition: all 1s ease-in-out;
+    color: #7B0000;
+}
+
+#current-page:hover{
+    border-bottom: 1.5px solid #7B0000;
+    border-radius: 20%;
+}
+
+a{
+    color: unset;
+    text-decoration: unset;
+}
+
+.content{
+    margin: auto;
+    width: 50%;
+    margin-top: 15%;
+}
+
+.social-contact, .form-contact{
+    width: 45%;
+    display: inline-block;
+}
+
+.form-contact{
+    border-left: 3px solid #7B0000;
+    padding-left: 1%;
+}
+
+.social-contact{
+    font-size: 110%;
+}
+
+.social-contact > label {
+    margin-bottom: 15%;
+    display: inline-block;
+}
+
+.form-contact > input, textarea {
+    width: 100%;
+    margin-bottom: 3%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-left: 2%;
+    background-color: black;
+    border: 1px solid #7B0000;
+    color: white;
+}
+
+.form-contact > input:focus, textarea:focus {
+    outline: solid #7B0000;
+    transition: .2s;
+}
+
+.form-contact > button {
+    float: right;
+    border: 1px solid #7B0000;
+    background-color: unset;
+    color: #7A7A7A;
+    transition: color, border-width 1s;
+}
+
+.form-contact > button:hover {
+    background-color: #7B0000;
+    color: white;
+    border-width: 3px;
+    transition: 1s;
+}

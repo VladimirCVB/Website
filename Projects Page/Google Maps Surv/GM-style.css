@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+    transition: color ease-in-out 1s;
+}
+
+header{
+    height: 50px;
+    background-color: #212121;
+}
+
+header > img {
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.navigation-b, #current-page{
+    float: right;
+    background-color: #212121;
+    border: none;
+    color: #7A7A7A;
+    margin-right: 5%;
+    margin-top: 1%;
+    font-size: 120%;
+    outline: none;
+    transition: color 1s;
+}
+
+#p-select{
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 1%;
+}
+
+#current-page{
+    border-bottom: 1.5px solid #7A7A7A;
+    border-radius: 5%;
+    transition: border-radius 1s, color 1s;
+}
+
+.navigation-b:hover, #current-page:hover, .b-projects:hover{
+    transition: all 1s ease-in-out;
+    color: #7B0000;
+    display: block;
+}
+
+.b-projects > button:hover{
+    color: #7B0000;
+    transition: all 1s ease-in-out;
+}
+
+#current-page:hover{
+    border-bottom: 1.5px solid #7B0000;
+    border-radius: 20%;
+}
+
+a{
+    color: unset;
+    text-decoration: unset;
+}
+
+.b-projects{
+    position: absolute;
+    margin-left: 76%;
+    margin-top: 1%;
+    display: none;
+}
+
+.b-projects > button{
+    width: 100%;
+    font-size: 110%;
+    background-color: #212121;
+    color: #7A7A7A;
+    outline: none;
+    border: none;
+    margin-bottom: 2%;
+    transition: 1s;
+}
+
+#p-select:focus ~ .b-projects{
+    display: block;
+}
+
+.intro > img, .driver > img, .cyclist > img, .public-tr > img{
+    float: left;
+    margin-right: 2%;
+}
+
+.intro {
+   display: block;
+   border: 2px solid white;
+   overflow: auto;
+}
+
+.intro > p {
+    margin: 2%;
+}
+
+.content{
+    margin: 5%;
+    text-align: justify;
+    font-size: 120%;
+}
+
+.driver, .cyclist, .public-tr{
+    overflow: auto;
+    border: 2px solid white;
+    padding: 1%;
+    margin-bottom: 1%;
+    border-radius: 1%;
+}
+
+.driver > ul > li, .cyclist > ul > li, .public-tr > ul > li {
+    margin-bottom: 2%;
+}
